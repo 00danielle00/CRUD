@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="idTabla" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnaNia" prefWidth="75.0" text="NIA" />
+          <TableColumn fx:id="columnaNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="columnaFechaNacimiento" prefWidth="208.2000274658203" text="Fecha Nacimiento" />
+        </columns>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </TableView>
+      <TextField fx:id="introducirNia" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="300.0" promptText="Introduce un NIA...">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="introducirNombre" alignment="TOP_LEFT" promptText="Introduce un nombre...">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <DatePicker fx:id="fecha" promptText="Fecha de nacimiento..." />
+      <Button fx:id="guardar" onAction="insertarEstudiante" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Guardar" />
+   </children>
+</VBox>
