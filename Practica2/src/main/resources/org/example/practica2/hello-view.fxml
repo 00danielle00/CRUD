@@ -4,9 +4,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="621.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica2.HelloController">
    <children>
-      <TableView fx:id="idTabla" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tablaEstudiantes" prefHeight="200.0" prefWidth="200.0">
         <columns>
           <TableColumn fx:id="columnaNia" prefWidth="75.0" text="NIA" />
           <TableColumn fx:id="columnaNombre" prefWidth="75.0" text="Nombre" />
@@ -16,6 +16,8 @@
             <Insets left="20.0" right="20.0" />
          </VBox.margin>
       </TableView>
+      <Button fx:id="botonEditar" onAction="#botonEditar" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="botonEliminar" onAction="#botonEliminar" mnemonicParsing="false" text="Eliminar" />
       <TextField fx:id="introducirNia" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="300.0" promptText="Introduce un NIA...">
          <VBox.margin>
             <Insets left="20.0" right="20.0" />
@@ -27,6 +29,7 @@
          </VBox.margin>
       </TextField>
       <DatePicker fx:id="fecha" promptText="Fecha de nacimiento..." />
-      <Button fx:id="guardar" onAction="insertarEstudiante" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Guardar" />
+       <Button fx:id="guardar" mnemonicParsing="false" onAction="#insertarEstudiante" prefHeight="26.0" prefWidth="108.0" text="Insertar" />
+      <Button fx:id="botonGuardar" onAction="#guardarEstudiante"  mnemonicParsing="false" text="Guardar" />
    </children>
 </VBox>
