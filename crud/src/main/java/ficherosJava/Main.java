@@ -70,7 +70,7 @@ public class Main {
         for (int i = 0; i < numArchivos; i++) {
             try {
                 String nombreArchivo2 = nombreArchivo + i + ".txt";
-                File archivo = new File(carpetaArchivos, nombreArchivo);
+                File archivo = new File(carpetaArchivos, nombreArchivo2);
                 if (archivo.createNewFile()) {
                     System.out.println("Archivo creado: " + archivo.getName());
                 } else {
