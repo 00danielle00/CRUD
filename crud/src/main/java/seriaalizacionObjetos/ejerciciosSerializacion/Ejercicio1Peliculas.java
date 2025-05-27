@@ -2,11 +2,11 @@ package seriaalizacionObjetos.ejerciciosSerializacion;
 
 import java.io.Serializable;
 
-public class Peliculas implements Serializable {
+public class Ejercicio1Peliculas implements Serializable {
     private String nombre;
     private transient String genero;
 
-    public Peliculas(String nombre, String genero) {
+    public Ejercicio1Peliculas(String nombre, String genero) {
         this.nombre = nombre;
         this.genero = genero;
     }

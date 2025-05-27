@@ -6,7 +6,7 @@ public class Ejercicio3 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         try {
             ObjectInputStream in = new ObjectInputStream(new FileInputStream("src/main/resources/ejercicio3.ser"));
-            Peliculas p = (Peliculas) in.readObject();
+            Ejercicio1Peliculas p = (Ejercicio1Peliculas) in.readObject();
             in.close();
         }catch (FileNotFoundException e){
             System.out.println("El archivo no fue encontrado. Se creará un archivo con datos por defecto.");
@@ -18,7 +18,7 @@ public class Ejercicio3 {
     }
 
     private static void crarArchivoDefecto() {
-        Peliculas peliculas = new Peliculas("nombre por defecto ","genero por defecto");
+        Ejercicio1Peliculas peliculas = new Ejercicio1Peliculas("nombre por defecto ","genero por defecto");
         try {
 
             ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("src/main/resources/ejercicio3.ser"));
