@@ -1,0 +1,96 @@
+[
+  {
+    "nombre": "Resident Evil",
+    "plataforma": "Xbox",
+    "precio": 40,
+    "disponible": true,
+    "listaGeneros": [
+      "Terror"
+    ]
+  },
+  {
+    "nombre": "Guitar Hero",
+    "plataforma": "Xbox",
+    "precio": 20,
+    "disponible": true,
+    "listaGeneros": [
+      "Musica"
+    ]
+  },
+  {
+    "nombre": "Halo",
+    "plataforma": "Xbox",
+    "precio": 70,
+    "disponible": true,
+    "listaGeneros": [
+      "Accion",
+      "Aventura"
+    ]
+  },
+  {
+    "nombre": "Minecraft",
+    "plataforma": "PC",
+    "precio": 20,
+    "disponible": true,
+    "listaGeneros": [
+      "Aventura",
+      "Sandbox"
+    ]
+  },
+  {
+    "nombre": "Age of Empires IV",
+    "plataforma": "PC",
+    "precio": 22,
+    "disponible": true,
+    "listaGeneros": [
+      "Estrategia"
+    ]
+  },
+  {
+    "nombre": "Valorant",
+    "plataforma": "PC",
+    "precio": 10,
+    "disponible": true,
+    "listaGeneros": [
+      "Shooter",
+      "Competitivo"
+    ]
+  },
+  {
+    "nombre": "Avatar",
+    "plataforma": "PS5",
+    "precio": 80,
+    "disponible": true,
+    "listaGeneros": [
+      "Aventura"
+    ]
+  },
+  {
+    "nombre": "Dead Space",
+    "plataforma": "PS5",
+    "precio": 45,
+    "disponible": true,
+    "listaGeneros": [
+      "Acción",
+      "Aventura"
+    ]
+  },
+  {
+    "nombre": "Watch Dogs",
+    "plataforma": "PS5",
+    "precio": 35,
+    "disponible": true,
+    "listaGeneros": [
+      "Competitivo"
+    ]
+  },
+  {
+    "nombre": "RayMan",
+    "plataforma": "Xbox",
+    "precio": 10,
+    "disponible": true,
+    "listaGeneros": [
+      "Aventura"
+    ]
+  }
+]
