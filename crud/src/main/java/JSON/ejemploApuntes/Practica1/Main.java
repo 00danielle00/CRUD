@@ -10,8 +10,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -19,18 +21,23 @@ public class Main {
 
         List<Videojuegos> listaVideojuegos = new ArrayList<>();
 
-        listaVideojuegos.add(new Videojuegos("Resident Evil","Xbox",40,true, Arrays.asList("Terror")));
-        listaVideojuegos.add(new Videojuegos("Guitar Hero","Xbox",20,true, Arrays.asList("Musica")));
-        listaVideojuegos.add(new Videojuegos("Halo","Xbox",70,true, Arrays.asList("Accion","Aventura")));
-
-        listaVideojuegos.add(new Videojuegos("Minecraft","PC",20,true, Arrays.asList("Aventura","Sandbox")));
-        listaVideojuegos.add(new Videojuegos("Age of Empires IV","PC",22,true, Arrays.asList("Estrategia")));
-        listaVideojuegos.add(new Videojuegos("Valorant","PC",10,true, Arrays.asList("Shooter","Competitivo")));
-
-        listaVideojuegos.add(new Videojuegos("Avatar","PS5",80,true, Arrays.asList("Aventura")));
-        listaVideojuegos.add(new Videojuegos("Dead Space","PS5",45,true, Arrays.asList("Acción","Aventura")));
-        listaVideojuegos.add(new Videojuegos("Watch Dogs","PS5",35,true, Arrays.asList("Competitivo")));
-
+        System.out.println("Dime 3 videojuegos:");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Introduce videojuego ("+(i+1)+"):");
+            System.out.println("Introduce el nombre: ");
+            String nombre = sc.next();
+            System.out.println("Introduce la plataforma(Xbox,PS5,PC):");
+            String plataforma = sc.next();
+            System.out.println("Introduce el precio: ");
+            int precio = sc.nextInt();
+            System.out.println("¿Esta disponible?(true,false)");
+            boolean disponible=sc.nextBoolean();
+            System.out.println("Indica los generos del videojuego (separado por comas):");
+            String generos = sc.next();
+            List<String> listageneros = Arrays.asList(generos.split(","));
+            Videojuegos videojuego = new Videojuegos(nombre,plataforma,precio,disponible,listageneros);
+            listaVideojuegos.add(videojuego);
+        }
 
         //Ejercicio b
         String json = gson.toJson(listaVideojuegos);
